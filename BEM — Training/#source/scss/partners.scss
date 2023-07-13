@@ -1,0 +1,88 @@
+.partners {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 390px;
+    min-height: 300px;
+    position: relative;
+    margin: 0 auto;
+    @media (max-width: $md1) {
+        max-height: 350px !important;
+    }
+    @media (max-width: $md2) {
+        min-height: 250px;
+        max-height: 300px;
+    }
+    background: url('../../img/header/bg.jpg') 0 0/cover no-repeat;
+    &__row {
+        position: relative;
+        margin-top: 100px;
+        padding-top: 90px;
+        margin: 0 auto;
+        max-width: 600px;
+        @media (max-width: $md1) {
+            padding-top: 70px;
+            max-width: 550px;
+        }
+        @media (max-width: $md2) {
+            margin-top: 20px;
+            padding-top: 10px;
+            max-width: 350px;
+        }
+    }
+    &__top {
+        position: relative;
+        top: 0;
+        margin: 0 auto;
+        width: fit-content;
+    }
+    &__title {
+        font-family: Lato;
+        font-size: 30.4px;
+        line-height: 1.2;
+        font-weight: 300;
+        letter-spacing: 0.06em;
+        color: #ffffff;
+    }
+    &__bottom {
+        position: relative;
+        padding: 7px;
+        margin: 0 auto;
+        max-height: 150px;
+    }
+    &__icons {
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        padding: 80px 0 30px 0;
+        @media (max-width: $md1) {
+            padding: 60px 0 20px 0;
+        }
+        @media (max-width: $md2) {
+            padding: 30px 0 10px 0;
+            width: fit-content;
+        }
+    }
+    &__item {
+        position: relative;
+        display: flex;
+        padding-left: 10px;
+        margin-right: 16%;
+        height: fit-content;
+        @media (max-width: $md1) {
+            padding-left: 8px;
+            margin-right: 14%;
+        }
+        @media (max-width: $md2) {
+            padding-left: 5px;
+            margin-right: 12%;
+            margin: 0 auto;
+            &:last-child {
+                width: 30%;
+                margin-right: 0;
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

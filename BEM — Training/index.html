@@ -1,0 +1,261 @@
+<!-- Сообщение браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка содержимого, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+    <!-- Заголовок страницы в браузере -->
+    <title>Методология БЭМ</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Кодировка страницы -->
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<!-- Отображаемое тело страницы -->
+
+<body>
+
+    <div class="header" style="background-image:url(img/header/bg.jpg);">
+        <div class="header__row" id="home">
+            <div class="header__logo">
+                <img src="img/header/logo.png" alt="">
+            </div>
+            <div class="header__title title">Clear, smart, attractive design </br> for your app, logo, website</div>
+            <div class="header__buttom">
+                <a href="" class="header__link">READ MORE</a>
+            </div>
+        </div>
+    </div>
+    <div class="menu" id="menu">
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn1" for="menu__toggle">
+          <span></span>
+        </label>
+            <ul class="menu__box">
+                <li><a class="menu__item1" href="#home">HOME</a></li>
+                <li><a class="menu__item1" href="#about">ABOUT US</a></li>
+                <li><a class="menu__item1" href="#portfolio">PORTFOLIO</a></li>
+                <li><a class="menu__item1" href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="menu__block">
+
+            <nav class="menu__list">
+                <a href="#home" class="menu__item menu__item_active">HOME</a>
+                <a href="#about" class="menu__item">ABOUT US</a>
+                <a href="#portfolio" class="menu__item">PORTFOLIO</a>
+                <a href="#contact" class="menu__item">CONTACT</a>
+
+            </nav>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="about__body">
+            <div class="about__header">
+                <div class="about__title title">ABOUT</div>
+                <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodincididunt ut labore et dolore magna aliqua. tempor incididunt ut labore et dolore magna aliqua.</div>
+            </div>
+            <div class="about__row">
+                <div class="about__column">
+                    <div class="item-about">
+                        <div class="item-about__icon">
+                            <img src="img/about/01.png" alt="" />
+                        </div>
+                        <div class="item-about__title">WEB</div>
+                        <div class="item-about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </div>
+                    </div>
+                </div>
+                <div class="about__column">
+                    <div class="item-about">
+                        <div class="item-about__icon">
+                            <img src="img/about/02.png" alt="" />
+                        </div>
+                        <div class="item-about__title">IOS and ANDROID</div>
+                        <div class="item-about__text">Lorem ipsum dolor sit amet,dolor sit amet consectetur adipisicing elit, sed </div>
+                    </div>
+                </div>
+                <div class="about__column">
+                    <div class="item-about">
+                        <div class="item-about__icon">
+                            <img src="img/about/03.png" alt="" />
+                        </div>
+                        <div class="item-about__title">MARKETING</div>
+                        <div class="item-about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed Lorem ipsum dolor sit amet,</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="portfolio" id="portfolio">
+        <div class="portfolio__header">
+            <div class="portfolio__title title">PORTFOLIO</div>
+            <div class="portfolio__menu  menu">
+                <div class="menu__block">
+                    <nav class="menu__list">
+                        <a href="" class="menu__item menu__item_active">ALL</a>
+                        <a href="" class="menu__item">WEB</a>
+                        <a href="" class="menu__item">APPS</a>
+                        <a href="" class="menu__item">OTHER</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="portfolio__galary">
+            <div class="portfolio__row">
+                <div class="portfolio__item">1</div>
+                <div class="portfolio__item">2</div>
+            </div>
+            <div class="portfolio__row">
+                <div class="portfolio__item">3</div>
+                <div class="portfolio__item">4</div>
+            </div>
+            <div class="portfolio__row">
+                <div class="portfolio__item">5</div>
+                <div class="portfolio__item">6</div>
+            </div>
+        </div>
+        <div class="portfolio__button">
+            <a href="" class="portfolio__btn">READ MORE</a>
+        </div>
+    </div>
+    <div class="partners">
+        <div class="partners__row">
+            <div class="partners__top">
+                <div class="partners__title">Our partners</div>
+            </div>
+            <div class="partners__bottom">
+                <nav class="partners__icons">
+                    <div class="partners__item"><img src="img/partner/01.png" alt=""></div>
+                    <div class="partners__item"><img src="img/partner/02.png" alt=""></div>
+                    <div class="partners__item"><img src="img/partner/03.png" alt=""></div>
+                    <div class="partners__item"><img src="img/partner/04.png" alt=""></div>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="contact__row">
+            <div class="contact__title title">CONTACT</div>
+            <div class="contact__block">
+                <div class="contact__left">
+                    <div class="contact__form">
+                        <form action="#" method="post" enctype="multipart/form-data">
+                            <div class="contact__input-info">
+                                <div class="contact__top-input">
+                                    <div class="contact__column">
+                                        <p> YOUR NAME</p>
+                                        <input tabindex="1" type="text" placeholder="" name="username" value="">
+                                    </div>
+                                    <div class="contact__column">
+                                        <p> YOUR E-MAIL</p>
+                                        <input tabindex="2" type="tel" placeholder="" name="usermail" value="">
+                                    </div>
+                                </div>
+                                <div class="contact__msg-info">
+                                    <p>MESSAGE</p>
+                                    <textarea tabindex="3" name="text" placeholder=""></textarea>
+                                </div>
+                                <div class="contact__bottom-btn">
+                                    <div class="contact__btn">
+                                        <button tabindex="4" type="submit">SEND</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="contact__right">
+                    <div class="contact__right-block">
+                        <div class="contact__text">Have an idea for a project? Just looking to explore and see the possibilities?<br/> I'm here to help.
+                        </div>
+                        <div class="contact__mailto">
+                            <span>Postma Elena</span>
+                        </div>
+                        <div class="contact__net">
+                            <nav class="contact__icons">
+                                <a href="" class="contact__item"> f </a>
+                                <a href="" class="contact__item"> in</a>
+                            </nav>
+                        </div>
+                        <div class="contact__mail">
+                            <p>e-mail: <span>postma.elena@gmail.com</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__block">
+            <div class="footer__logo">
+                <img src="img/header/logo.png" alt="">
+            </div>
+            <div class="footer__menu menu" id="menuB">
+                <div class="menu__block">
+                    <nav class="menu__list">
+                        <a href="#home" class="menu__item ">Home</a>
+                        <a href="" class="menu__item">Facebook</a>
+                        <a href="" class="menu__item">Linkedin</a>
+                        <a href="#contact" class="menu__item">Contact</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__text">
+                <p>© 2015 - 2023. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#menu", ).on("click", "a", function(event) {
+                //отменяем стандартную обработку нажатия по ссылке
+                event.preventDefault();
+
+                //забираем идентификатор бока с атрибута href
+                var id = $(this).attr('href'),
+
+                    //узнаем высоту от начала страницы до блока на который ссылается якорь
+                    top = $(id).offset().top;
+
+                //анимируем переход на расстояние - top за 1500 мс
+                $('body,html').animate({
+                    scrollTop: top
+                }, 1500);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#menuB").on("click", "a", function(event) {
+                //отменяем стандартную обработку нажатия по ссылке
+                event.preventDefault();
+
+                //забираем идентификатор бока с атрибута href
+                var id = $(this).attr('href'),
+
+                    //узнаем высоту от начала страницы до блока на который ссылается якорь
+                    top = $(id).offset().top;
+
+                //анимируем переход на расстояние - top за 1500 мс
+                $('body,html').animate({
+                    scrollTop: top
+                }, 1500);
+            });
+        });
+    </script>
+</body>
+
+</html>

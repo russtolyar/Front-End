@@ -1,0 +1,115 @@
+.portfolio {
+    position: relative;
+    background-color: #dce1e1;
+    margin: 0 auto;
+    padding-bottom: 65px;
+    @media (max-width: $md1) {
+        padding-bottom: 55px;
+    }
+    @media (max-width: $md2) {
+        padding-bottom: 25px;
+    }
+    &__header {
+        position: relative;
+    }
+    &__title {
+        font-family: Lato;
+        font-size: 34px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: #000000;
+        &::after {
+            bottom: -10px;
+        }
+    }
+    &__galary {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 120px;
+        margin-bottom: 65px;
+        max-width: 1100px;
+        @media (max-width: $md1) {
+            margin-top: 70px;
+            margin-bottom: 25px;
+            max-width: 1000px;
+        }
+        @media (max-width: $md2) {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            max-width: 350px;
+        }
+    }
+    &__row {
+        left: 0;
+        position: relative;
+        margin: 0 auto;
+        width: fit-content;
+        display: block;
+        padding-bottom: 5px;
+        align-items: center;
+    }
+    &__item {
+        position: relative;
+        width: 430px;
+        height: 335px;
+        display: inline-block;
+        background-color: #eaeaea;
+        margin: 0 10px;
+        top: 0;
+        @media (max-width: $md1) {
+            width: 400px;
+            height: 315px;
+        }
+        @media (max-width: $md2) {
+            width: 250px;
+            height: 235px;
+            padding: 15px 0;
+            border: 1px solid rgb(114, 109, 109);
+            display: block;
+        }
+        @media (min-width: 425px) {
+            &:last-child {
+                right: 0px;
+            }
+            &:first-child {
+                left: 0px;
+            }
+        }
+        // &:last-child {
+        //     right: 0px;
+        // }
+        // &:first-child {
+        //     left: 0px;
+        // }
+    }
+    &__button {
+        width: 180px;
+        height: 45px;
+        position: relative;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 12px 34px;
+        cursor: pointer;
+        &:hover {
+            background-color: #ada074;
+            text-decoration: underline;
+            box-shadow: -5px -5px 10px 5px gray;
+            transition: ease 0.3s;
+        }
+    }
+    &__btn {
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        width: 180px;
+        height: 48px;
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: #000000;
+    }
+}

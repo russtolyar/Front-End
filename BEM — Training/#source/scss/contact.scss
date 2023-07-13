@@ -1,0 +1,267 @@
+.contact {
+    position: relative;
+    margin: 0 auto;
+    &__row {
+        position: relative;
+        margin-top: 170px;
+        height: fit-content;
+        @media (max-width: $md1) {
+            margin-top: 100px;
+        }
+        @media (max-width: $md2) {
+            margin-top: 50px;
+        }
+    }
+    &__title {
+        font-family: Lato !important;
+        font-size: 34px !important;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: #000000;
+        @media (max-width: $md1) {
+            font-size: 30px;
+            letter-spacing: 0.15em;
+        }
+        @media (max-width: $md2) {
+            font-size: 26px;
+            letter-spacing: 0.13em;
+        }
+    }
+    &__block {
+        position: relative;
+        width: fit-content;
+        margin: 165px auto 0 auto;
+        height: fit-content;
+        padding: 10px;
+        @media (max-width: $md1) {
+            margin: 115px auto 0 auto;
+        }
+        @media (max-width: $md2) {
+            margin: 25px auto 0 auto;
+        }
+    }
+    &__left {
+        position: relative;
+        width: fit-content;
+        padding: 5px;
+        left: 0;
+        margin-right: 80px;
+        display: inline-block;
+        height: fit-content;
+        @media (max-width: $md1) {
+            margin-right: 60px;
+        }
+        @media (max-width: $md2) {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    &__input-info {
+        p {
+            font-family: Lato;
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #000000;
+            margin: 0 auto 20px auto;
+            @media (max-width: $md2) {
+                margin: 0 auto 10px auto;
+                align-items: center;
+            }
+        }
+        input {
+            width: 161px;
+            height: 35px;
+            background-color: #f8f7f7;
+            border: 1px solid black;
+            margin-bottom: 75px;
+            @media (max-width: $md1) {
+                width: 150px;
+                height: 32px;
+                margin-bottom: 75px;
+            }
+            @media (max-width: $md2) {
+                width: 250px;
+                height: 30px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    &__top-input {
+        position: relative;
+        width: fit-content;
+        margin: 0 0;
+        @media (max-width: $md2) {
+            display: block;
+            margin: 0 auto;
+            align-items: center;
+        }
+    }
+    &__column {
+        position: relative;
+        display: inline-block;
+        width: 163px;
+        height: fit-content;
+        top: 0;
+        margin-right: 55px;
+        height: fit-content;
+        @media (max-width: $md1) {
+            display: inline-block;
+            width: 150px;
+            margin-right: 45px;
+        }
+        @media (max-width: $md2) {
+            display: block;
+            width: 255px;
+            margin: 0 auto;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__msg-info {
+        textarea {
+            width: 383px;
+            height: 118px;
+            background-color: #f8f7f7;
+            border: 1px solid black;
+            margin-bottom: 40px;
+            @media (max-width: $md1) {
+                width: 365px;
+                height: 100px;
+                margin-bottom: 30px;
+            }
+            @media (max-width: $md2) {
+                width: 250px;
+                height: 90px;
+                margin-bottom: 20px;
+            }
+        }
+        @media (max-width: $md2) {
+            margin: 0 auto;
+        }
+    }
+    &__bottom-btn {
+        position: relative;
+        margin: 0 90%;
+        @media (max-width: $md2) {
+            margin: 0 80%;
+        }
+    }
+    &__btn {
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #000000;
+    }
+    &__right {
+        padding-top: 0;
+        margin-top: 0;
+        position: relative;
+        display: inline-block;
+        width: fit-content;
+        height: fit-content;
+        margin-right: 80px;
+        vertical-align: top;
+        @media (max-width: $md1) {
+            margin-right: 60px;
+            align-items: center;
+        }
+        @media (max-width: $md2) {
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            align-items: center;
+        }
+    }
+    &__right-block {
+        position: relative;
+        top: 0;
+        max-width: 390px;
+        max-height: 300px;
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 300;
+        color: #000000;
+        @media (max-width: $md1) {
+            max-width: 300px;
+            max-height: 280px;
+        }
+        @media (max-width: $md2) {
+            max-width: 350px;
+            max-height: 290px;
+        }
+    }
+    &__text {
+        width: 258px;
+        @media (max-width: $md1) {
+            width: 240px;
+        }
+        @media (max-width: $md2) {
+            width: 220px;
+            margin: 0 auto;
+        }
+    }
+    &__mailto {
+        padding: 35px 0 25px 0;
+        font-weight: 700;
+        @media (max-width: $md1) {
+            padding: 25px 0 20px 0;
+        }
+        @media (max-width: $md2) {
+            padding: 15px 0 10px 0;
+        }
+    }
+    &__icons {
+        position: relative;
+        font-family: Lato;
+        font-family: FontAwesome;
+        font-size: 15px;
+        font-weight: 700;
+        color: #000000;
+    }
+    &__item {
+        min-width: 29px;
+        min-height: 29px;
+        border: 2px solid black;
+        border-radius: 50%;
+        margin: 0 10px 0 0;
+        padding: 4px 10px;
+        @media (max-width: $md1) {
+            min-width: 27px;
+            min-height: 27px;
+        }
+        @media (max-width: $md2) {
+            min-width: 22px;
+            min-height: 22px;
+        }
+        // &:before {
+        //     content: ' \25CF';
+        //     color: #000000;
+        //     font-size: 50px;
+        // }
+        // &:after {
+        //     content: ' \25CF';
+        //     color: #fff;
+        //     font-size: 45px;
+        // }
+        &:last-child {
+            padding: 4px 8px;
+        }
+    }
+    &__mail {
+        margin: 15px 0 0 0;
+        span {
+            font-weight: 700;
+        }
+    }
+}
